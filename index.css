@@ -1,9 +1,12 @@
-body
+main
 {
     display: grid;
+    width: 1340px;
     grid-template-columns: 60px 140px 300px 300px 300px 90px 150px;
     grid-template-rows: 50px 200px 120px 90px 200px;
     font-family: Arial, serif;
+    margin: 0 auto;
+    position: relative;
 }
 
 .geo
@@ -49,6 +52,18 @@ body
     color: #f00;
 }
 
+input[id='visited-switch']:checked ~ main label[for='visited-switch']::before,
+input[id='traffic-switch']:checked ~ main label[for='traffic-switch']::before,
+input[id='tv-switch']:checked ~ main label[for='tv-switch']::before,
+input[id='weather-switch']:checked ~ main label[for='weather-switch']::before,
+input[id='auto-switch']:checked ~ main label[for='auto-switch']::before,
+input[id='map-switch']:checked ~ main label[for='map-switch']::before,
+input[id='poster-switch']:checked ~ main label[for='poster-switch']::before,
+input[id='jokes-switch']:checked ~ main label[for='jokes-switch']::before
+{
+    content: url('images/checked.png');
+}
+
 .rate a
 {
     font-size: 12px;
@@ -75,6 +90,7 @@ body
     margin-top: 10px;
     grid-column: 6 / 7;
     grid-row: 1 / 2;
+    height: 20px;
 }
 
 input[id='menu']:checked ~ .settings-window
@@ -82,17 +98,47 @@ input[id='menu']:checked ~ .settings-window
     display: block;
 }
 
-.settings-window
+.label-elem > label::before
 {
-    width: 200px;
-    display: none;
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-    z-index: 1;
-    border: 1px solid black;
+    content: url('images/checkbox.png');
+    padding-right: 10px;
 }
 
-body > input
+.label-elem > label
+{
+    cursor: pointer;
+}
+
+.settings-window
+{
+    display: none;
+    border: 1px solid #000;
+    position: absolute;
+    left: 1040px;
+    top: 60px;
+}
+
+.label-elem
+{
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.triangle
+{
+    width: 30px;
+    height: 30px;
+    margin-left: 85px;
+    transform: rotate(-45deg);
+    margin-top: -16px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    background: #fff;
+}
+
+body > input,
+main > input
 {
     display: none;
 }
@@ -133,8 +179,16 @@ body > input
     margin: 8px 0;
 }
 
+input[id='search-string']
+{
+    outline: none;
+    padding-left: 10px;
+}
+
 .news a:hover,
-.search-example a:hover
+.search-example a:hover,
+.label-elem:hover,
+.more-jokes:hover
 {
     color: #f00;
 }
@@ -197,6 +251,12 @@ body > input
     margin-right: 20px;
 }
 
+.main a:hover,
+.menu-switcher:hover
+{
+    color: #f00;
+}
+
 .main a
 {
     text-decoration: none;
@@ -212,7 +272,7 @@ input[id='search-string']
 
 .search
 {
-    width: 760px;
+    width: 770px;
     padding: 2px;
     background: #ffd700;
     margin-top: 5px;
@@ -223,6 +283,7 @@ input[id='search-string']
     background: #ffd700;
     border: none;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .search-example
@@ -312,7 +373,8 @@ input[id='search-string']
 .map-elem,
 .event,
 .big-event,
-.auto-news-content
+.auto-news-content,
+.settings-window
 {
     font-size: 13px;
 }
@@ -442,4 +504,34 @@ input[id='5']:checked ~ label:not([for='1'])
 {
     color: #00f;
     cursor: pointer;
+}
+
+.service-jokes,
+.service-traffic,
+.service-tv,
+.service-weather,
+.service-auto-news,
+.service-visited,
+.service-map,
+.service-poster
+{
+    display: none;
+}
+
+input[id='visited-switch']:checked ~ main .service-visited,
+input[id='traffic-switch']:checked ~ main .service-traffic,
+input[id='tv-switch']:checked ~ main .service-tv,
+input[id='weather-switch']:checked ~ main .service-weather,
+input[id='auto-switch']:checked ~ main .service-auto-news,
+input[id='map-switch']:checked ~ main .service-map,
+input[id='poster-switch']:checked ~ main .service-poster,
+input[id='jokes-switch']:checked ~ main .service-jokes
+{
+    display: block;
+}
+
+.col1:not(:checked) ~ .col1:not(:checked) ~ main .column1,
+.col2:not(:checked) ~ .col2:not(:checked) ~ main .column2
+{
+    display: none;
 }

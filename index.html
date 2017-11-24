@@ -6,201 +6,231 @@
     <title>Яндекс</title>
 </head>
 <body>
-    <div class="geo">
-        <div class="geoarrow">&#10148;</div>
-        <div class="region">Екатеринбург</div>
-    </div>
-    <input type="checkbox" id="menu">
-    <label for="menu" class="menu-switcher">Настройка</label>
     <input type="checkbox" id="visited-switch" class="col1" checked>
     <input type="checkbox" id="jokes-switch" class="col1" checked>
     <input type="checkbox" id="tv-switch" class="col2" checked>
-    <input type="checkbox" id="auto-news-switch" class="col2" checked>
+    <input type="checkbox" id="auto-switch" class="col2" checked>
     <input type="checkbox" id="weather-switch" class="col3" checked>
     <input type="checkbox" id="traffic-switch" class="col3" checked>
     <input type="checkbox" id="map-switch" class="col3" checked>
-    <input type="checkbox" id="post-switch" class="col3" checked>
-    <div class="account">
-        <div class="login">login</div>
-        <div class="post">Почта</div>
-        <div class="post-count">42</div>
-    </div>
-    <div class="news-tab">
-        <div class="news-header">
-            <a href="#" class="now-in-smi-switcher">Сейчас в СМИ</a>
-            <a href="#" class="in-ekb-switcher">в  Екатеринбурге</a>
-            <span class="datetime">19 ноября, воскресенье 20:36</span>
+    <input type="checkbox" id="poster-switch" class="col3" checked>
+    <main>
+        <div class="geo">
+            <div class="geoarrow">&#10148;</div>
+            <div class="region">Екатеринбург</div>
         </div>
-        <ul class="news">
-            <li><a href="#">Мугабе дали менее суток на добровольный уход в отставку</a></li>
-            <li><a href="#">Михаил Саакашвили заявил о готовности возглавить правительство Украины</a></li>
-            <li><a href="#">Порошенко назвал Украину «космической державой»</a></li>
-            <li><a href="#">В МИД Украины рассказали о передаче США «опыта борьбы с россиянами»</a></li>
-            <li><a href="#">Генсек НАТО вновь извинился перед Эрдоганом за портрет Ататюрка</a></li>
-        </ul>
-        <div class="rate">
-            <a href="#">USD ЦБ</a>
-            <span class="rate-value">59,63</span>
-            <span class="rate-difference">-0,10</span>
-            <a href="#">EUR ЦБ</a>
-            <span class="rate-value">70,36</span>
-            <span class="rate-difference">-0,06</span>
-            <a href="#">Нефть</a>
-            <span class="rate-value">62,74</span>
-            <span class="rate-difference">-0,27%</span>
-            <a href="#" class="more">&#183;&#183;&#183;</a>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu-switcher">Настройка</label>
+        <div class="settings-window">
+            <div class="triangle"></div>
+            <div class="label-elem">
+                <label for="visited-switch">Посещаемые</label>
+            </div>
+            <div class="label-elem">
+                <label for="jokes-switch">Анекдоты</label>
+            </div>
+                <div class="label-elem">
+                <label for="tv-switch">ТВ-программа</label>
+                </div>
+            <div class="label-elem">
+                <label for="auto-switch">Автомобильные новости</label>
+            </div>
+            <div class="label-elem">
+                <label for="weather-switch">Погода</label>
+            </div>
+            <div class="label-elem">
+                <label for="traffic-switch">Пробки</label>
+            </div>
+            <div class="label-elem">
+                <label for="map-switch">Карта Екатеринбурга</label>
+            </div>
+            <div class="label-elem">
+                <label for="poster-switch">Афиша</label>
+            </div>
         </div>
-    </div>
-    <div class="little-advertisement">
-        <a href="http://google.com">
-            <img src="images/yandex.png" width="120" height="90" alt="Яндекс браузер">
-        </a>
+        <div class="account">
+            <div class="login">login</div>
+            <div class="post">Почта</div>
+            <div class="post-count">42</div>
+        </div>
+        <div class="news-tab">
+            <div class="news-header">
+                <a href="#" class="now-in-smi-switcher">Сейчас в СМИ</a>
+                <a href="#" class="in-ekb-switcher">в  Екатеринбурге</a>
+                <span class="datetime">19 ноября, воскресенье 20:36</span>
+            </div>
+            <ul class="news">
+                <li><a href="#">Мугабе дали менее суток на добровольный уход в отставку</a></li>
+                <li><a href="#">Михаил Саакашвили заявил о готовности
+                    возглавить правительство Украины</a></li>
+                <li><a href="#">Порошенко назвал Украину «космической державой»</a></li>
+                <li><a href="#">В МИД Украины рассказали о передаче США «опыта борьбы с россиянами»</a></li>
+                <li><a href="#">Генсек НАТО вновь извинился перед Эрдоганом за портрет Ататюрка</a></li>
+            </ul>
+            <div class="rate">
+                <a href="#">USD ЦБ</a>
+                <span class="rate-value">59,63</span>
+                <span class="rate-difference">-0,10</span>
+                <a href="#">EUR ЦБ</a>
+                <span class="rate-value">70,36</span>
+                <span class="rate-difference">-0,06</span>
+                <a href="#">Нефть</a>
+                <span class="rate-value">62,74</span>
+                <span class="rate-difference">-0,27%</span>
+                <a href="#" class="more">&#183;&#183;&#183;</a>
+            </div>
+        </div>
+        <div class="little-advertisement">
+            <a href="http://google.com">
+                <img src="images/yandex.png" width="120" height="90" alt="Яндекс браузер">
+            </a>
             <div class="warning">0+</div>
             <div class="advertisement-description"><a href="#">Браузер без опасности</a></div>
             <div class="description">Технология Протект</div>
-    </div>
-    <div class="logo">
-        <img src="images/logo.png" width="130" height="62" class="logo" alt="Логотип Яндекса">
-    </div>
-    <div class="main">
-        <a href="#">Видео</a>
-        <a href="#">Картинки</a>
-        <a href="#">Новости</a>
-        <a href="#">Карты</a>
-        <a href="#">Маркет</a>
-        <a href="#">Переводчик</a>
-        <a href="#">Музыка</a>
-        <a href="#">ещё</a>
-        <form action="#" method="get" class="search">
-            <input type="text" id="search-string">
-            <label for="search-string"></label>
-            <button type="submit" class="search-button">Найти</button>
-        </form>
-        <p class="search-example">Найдётся всё. Например, <a href="#">как апнуть куру в доте</a></p>
-    </div>
-    <a href="#" class="advertisement"><img src="images/advertisement.png"
-                                           height="90" width="728" alt="Реклама"></a>
-    <div class="services">
-        <div class="column1">
-            <div class="service-visited">
-                <h2><a href="#">Посещаемое</a></h2>
-                <div class="visited"><span class="name">Маркет</span> — товары из Китая</div>
-                <div class="visited"><span class="name">Авто.ру</span> —  Туссан третьей серии</div>
-                <div class="visited"><span class="name">Недвижимость</span> — продажа студии</div>
-                <div class="visited"><span class="name">Работа</span> — охранником</div>
-                <div class="visited"><span class="name">Здоровье</span> — врач на связи</div>
-                <div class="visited"><span class="name">Коллекции</span> — как мелировать волосы</div>
-                <div class="visited"><span class="name">Авиабилеты</span> — из Екатеринбурга</div>
+        </div>
+        <div class="logo">
+            <img src="images/logo.png" width="130" height="62" class="logo" alt="Логотип Яндекса">
+        </div>
+        <div class="main">
+            <a href="#">Видео</a>
+            <a href="#">Картинки</a>
+            <a href="#">Новости</a>
+            <a href="#">Карты</a>
+            <a href="#">Маркет</a>
+            <a href="#">Переводчик</a>
+            <a href="#">Музыка</a>
+            <a href="#">ещё</a>
+            <form action="#" method="get" class="search">
+                <input type="text" id="search-string">
+                <label for="search-string"></label>
+                <button type="submit" class="search-button">Найти</button>
+            </form>
+            <p class="search-example">Найдётся всё. Например, <a href="#">как апнуть куру в доте</a></p>
+        </div>
+        <a href="#" class="advertisement"><img src="images/advertisement.png"
+                                               height="90" width="728" alt="Реклама"></a>
+        <div class="services">
+            <div class="column1">
+                <div class="service-visited">
+                    <h2><a href="#">Посещаемое</a></h2>
+                    <div class="visited"><span class="name">Маркет</span> — товары из Китая</div>
+                    <div class="visited"><span class="name">Авто.ру</span> —  Туссан третьей серии</div>
+                    <div class="visited"><span class="name">Недвижимость</span> — продажа студии</div>
+                    <div class="visited"><span class="name">Работа</span> — охранником</div>
+                    <div class="visited"><span class="name">Здоровье</span> — врач на связи</div>
+                    <div class="visited"><span class="name">Коллекции</span> — как мелировать волосы</div>
+                    <div class="visited"><span class="name">Авиабилеты</span> — из Екатеринбурга</div>
+                </div>
+                <div class="service-jokes">
+                    <input type="radio" id="1" name="jokes-switcher" checked>
+                    <input type="radio" id="2" name="jokes-switcher">
+                    <input type="radio" id="3" name="jokes-switcher">
+                    <input type="radio" id="4" name="jokes-switcher">
+                    <input type="radio" id="5" name="jokes-switcher">
+                    <h2><a href="#">Анекдоты</a></h2>
+                    <p id="joke1">
+                        Раздел: <a href="#">Медицинские</a><br>
+                        - Вас лечить хорошо или бесплатно?
+                    </p>
+                    <p id="joke2">
+                        Раздел: <a href="#">Странные</a><br>
+                        - Бредогенератор для анекдотов
+                    </p>
+                    <p id="joke3">
+                        Раздел: <a href="#">Тупые</a><br>
+                        - Колобок повесился
+                    </p>
+                    <p id="joke4">
+                        Раздел: <a href="#">Несмешные</a><br>
+                        - Ура! Наконец в выходные обещают +30! В субботу 15 и в воскресенье 15..
+                    </p>
+                    <p id="joke5">
+                        Раздел: <a href="#">Про русских</a><br>
+                        - Китайские палочки - это на самом деле хорошо обглоданные деревянные русские ложки..
+                    </p>
+                    <label for="2" class="more-jokes">&#8635; Показать ещё</label>
+                    <label for="3" class="more-jokes">&#8635; Показать ещё</label>
+                    <label for="4" class="more-jokes">&#8635; Показать ещё</label>
+                    <label for="5" class="more-jokes">&#8635; Показать ещё</label>
+                    <label for="1" class="more-jokes">&#8635; Показать ещё</label>
+                </div>
             </div>
-            <div class="service-jokes">
-                <input type="radio" id="1" name="jokes-switcher" checked>
-                <input type="radio" id="2" name="jokes-switcher">
-                <input type="radio" id="3" name="jokes-switcher">
-                <input type="radio" id="4" name="jokes-switcher">
-                <input type="radio" id="5" name="jokes-switcher">
-                <h2><a href="#">Анекдоты</a></h2>
-                <p id="joke1">
-                    Раздел: <a href="#">Медицинские</a><br>
-                    - Вас лечить хорошо или бесплатно?
-                </p>
-                <p id="joke2">
-                    Раздел: <a href="#">Странные</a><br>
-                    - Бредогенератор для анекдотов
-                </p>
-                <p id="joke3">
-                    Раздел: <a href="#">Тупые</a><br>
-                    - Колобок повесился
-                </p>
-                <p id="joke4">
-                    Раздел: <a href="#">Несмешные</a><br>
-                    - Ура! Наконец в выходные обещают +30! В субботу 15 и в воскресенье 15..
-                </p>
-                <p id="joke5">
-                    Раздел: <a href="#">Про русских</a><br>
-                    - Китайские палочки - это на самом деле хорошо обглоданные деревянные русские ложки..
-                </p>
-                <label for="2" class="more-jokes">&#8635; Показать ещё</label>
-                <label for="3" class="more-jokes">&#8635; Показать ещё</label>
-                <label for="4" class="more-jokes">&#8635; Показать ещё</label>
-                <label for="5" class="more-jokes">&#8635; Показать ещё</label>
-                <label for="1" class="more-jokes">&#8635; Показать ещё</label>
+            <div class="column2">
+                <div class="service-tv">
+                    <h2>
+                        <a href="#">Телепрограммы</a>
+                        <button type="button" class="tv-button">ТВ Онлайн &#9658;</button>
+                    </h2>
+                    <div class="tv-info">16:00 Понять. Простить <span class="channel">41 Домашний</span></div>
+                    <div class="tv-info">16:30 Место встречи <span class="channel">НТВ</span></div>
+                    <div class="tv-info">16:30 Детективы <span class="channel">Пятый канал</span></div>
+                    <div class="tv-info">16:30 Новости <span class="channel">РЕН ТВ</span></div>
+                    <div class="tv-info">16:30 Гадалка <span class="channel">ТВ-3</span></div>
+                    <div class="tv-info">16:30 Реальные пацаны <span class="channel">ТНТ</span></div>
+                </div>
+                <div class="service-auto-news">
+                    <h2><a href="#">Автомобильные новости</a></h2>
+                    <div class="auto-news-content">
+                        <p class="single-news">Правительство поддержало законопроект о
+                            регистрации машиномест <span>12:19</span></p>
+                        <p class="single-news">Обзор нового Mitsubishi, за которым
+                            выстроилась очередь <span>12:01</span></p>
+                        <p class="single-news">&laquo;Лады&raquo; оснастят системой
+                            управления со смартфона <span>11:40</span></p>
+                        <p class="single-news">В Китае представили спорткар с
+                            двигателем от Focus RS <span>11:30</span></p>
+                        <p class="single-news">Завод Hino в Подмосковье начнут
+                            строить весной 2018 года <span>11:20</span></p>
+                        <p class="single-news">Volvo назвал российские цены нового XC60 <span>11:01</span></p>
+                        <p class="single-news">Автостат: В РФ рынок авто с пробегом
+                            в октябре возрос на 1% <span>10:40</span></p>
+                        <p class="single-news">Инженеры рассказали, как выкрутиться,
+                            если сел аккумулятор <span>10:35</span></p>
+                        <p class="single-news">В Сети появились фото Bentley Grand
+                            Convertible с презентации в Дубае <span>09:49</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column3">
+                <div class="mini-services">
+                    <div class="service-weather">
+                        <h2>
+                            <a href="#">Погода</a>
+                            <img src="images/weather.png" width="30" height="30" alt="Облачко">
+                            <span>-3 &#176;C</span>
+                        </h2>
+                        <div class="forecast">Утро −3,  день −1</div>
+                    </div>
+                    <div class="service-traffic">
+                        <h2>
+                            <a href="#">Пробки</a>
+                            <img src="images/traffic.png" width="30" height="30" alt="Светофор">
+                            <span>1 балл</span>
+                        </h2>
+                        <div class="description">На дорогах свободно</div>
+                    </div>
+                    <div class="service-map">
+                        <h2>
+                            <a href="#">Карта Екатеринбурга</a>
+                        </h2>
+                        <div class="map-elem">Такси</div>
+                        <div class="map-elem">Расписания</div>
+                        <div class="map-elem">Междугородние автобусы</div>
+                    </div>
+                </div>
+                <div class="service-poster">
+                    <h2>
+                        <a href="#">Афиша</a>
+                    </h2>
+                    <div class="event">Субурбикон <span>премьера в чт</span></div>
+                    <div class="event">Последний богатырь <span>приключения</span></div>
+                    <div class="event">Фиксики: большой секрет <span>мультфильм</span></div>
+                    <div class="event">Тор: Рагнарёк <span>фэнтези</span></div>
+                    <div class="event">Убийство в Восточном... <span>драма</span></div>
+                    <div class="big-event">Концерты — Brainstorm</div>
+                </div>
             </div>
         </div>
-        <div class="column2">
-            <div class="service-tv">
-                <h2>
-                    <a href="#">Телепрограммы</a>
-                    <button type="button" class="tv-button">ТВ Онлайн &#9658;</button>
-                </h2>
-                <div class="tv-info">16:00 Понять. Простить <span class="channel">41 Домашний</span></div>
-                <div class="tv-info">16:30 Место встречи <span class="channel">НТВ</span></div>
-                <div class="tv-info">16:30 Детективы <span class="channel">Пятый канал</span></div>
-                <div class="tv-info">16:30 Новости <span class="channel">РЕН ТВ</span></div>
-                <div class="tv-info">16:30 Гадалка <span class="channel">ТВ-3</span></div>
-                <div class="tv-info">16:30 Реальные пацаны <span class="channel">ТНТ</span></div>
-            </div>
-            <div class="service-auto-news">
-                <h2><a href="#">Автомобильные новости</a></h2>
-                <div class="auto-news-content">
-                    <p class="single-news">Правительство поддержало законопроект о
-                        регистрации машиномест <span>12:19</span></p>
-                    <p class="single-news">Обзор нового Mitsubishi, за которым
-                        выстроилась очередь <span>12:01</span></p>
-                    <p class="single-news">&laquo;Лады&raquo; оснастят системой
-                        управления со смартфона <span>11:40</span></p>
-                    <p class="single-news">В Китае представили спорткар с
-                        двигателем от Focus RS <span>11:30</span></p>
-                    <p class="single-news">Завод Hino в Подмосковье начнут
-                        строить весной 2018 года <span>11:20</span></p>
-                    <p class="single-news">Volvo назвал российские цены нового XC60 <span>11:01</span></p>
-                    <p class="single-news">Автостат: В РФ рынок авто с пробегом
-                        в октябре возрос на 1% <span>10:40</span></p>
-                    <p class="single-news">Инженеры рассказали, как выкрутиться,
-                        если сел аккумулятор <span>10:35</span></p>
-                    <p class="single-news">В Сети появились фото Bentley Grand
-                        Convertible с презентации в Дубае <span>09:49</span></p>
-                </div>
-            </div>
-        </div>
-        <div class="column3">
-            <div class="mini-services">
-                <div class="service-weather">
-                    <h2>
-                        <a href="#">Погода</a>
-                        <img src="images/weather.png" width="30" height="30" alt="Облачко">
-                        <span>-3 &#176;C</span>
-                    </h2>
-                    <div class="forecast">Утро −3,  день −1</div>
-                </div>
-                <div class="service-traffic">
-                    <h2>
-                        <a href="#">Пробки</a>
-                        <img src="images/traffic.png" width="30" height="30" alt="Светофор">
-                        <span>1 балл</span>
-                    </h2>
-                    <div class="description">На дорогах свободно</div>
-                </div>
-                <div class="service-map">
-                    <h2>
-                        <a href="#">Карта Екатеринбурга</a>
-                    </h2>
-                    <div class="map-elem">Такси</div>
-                    <div class="map-elem">Расписания</div>
-                    <div class="map-elem">Междугородние автобусы</div>
-                </div>
-            </div>
-            <div class="service-poster">
-                <h2>
-                    <a href="#">Афиша</a>
-                </h2>
-                <div class="event">Субурбикон <span>премьера в чт</span></div>
-                <div class="event">Последний богатырь <span>приключения</span></div>
-                <div class="event">Фиксики: большой секрет <span>мультфильм</span></div>
-                <div class="event">Тор: Рагнарёк <span>фэнтези</span></div>
-                <div class="event">Убийство в Восточном... <span>драма</span></div>
-                <div class="big-event">Концерты — Brainstorm</div>
-            </div>
-        </div>
-    </div>
+    </main>
 </body>
 </html>
